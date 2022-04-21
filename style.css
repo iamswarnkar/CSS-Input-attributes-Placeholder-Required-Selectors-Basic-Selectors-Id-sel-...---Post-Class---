@@ -7,3 +7,182 @@
 }
 
 /* Write CSS code below */
+
+.main-content{
+    display: grid;
+    grid-template-columns: 300px 700px;
+    min-height: 1000px;
+    width: 90%;
+    margin-left: 5%;
+}
+.left-section{
+    width: 300px;
+    background: #575252ec;
+    color: #ffffff;
+}
+.right-section{ 
+    float: right;
+    width: 700px;
+    color:#ffffff;
+    background: teal;
+}
+.left-content{
+    padding: 1rem;
+}
+
+.profile-image{
+    background: url('https://media-exp1.licdn.com/dms/image/C5603AQH1tT9qzLIxMw/profile-displayphoto-shrink_200_200/0/1645548420175?e=1655942400&v=beta&t=BBvFQTma-DLBVs4xmXNpAY4aIY55x3h5J37nL894n6Q');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 60%;
+    height: 10.5rem;
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid white;
+}
+
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.personal-details{
+    margin-top: 5px;  
+}
+
+.personal-details div{
+    margin-bottom: 5px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.skill-title{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+
+.skill-item{
+    margin-bottom: 10px;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Right section  */
+
+.right-section{
+    grid-column:span 1/span 2;
+}
+.right-main-content{
+      padding: 2rem 3rem;
+}
+.right-title{
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 0.5rem;
+      letter-spacing: 1px;
+}
+about,experience,education,project{
+      margin-bottom: 10px;
+}
+.about-para{
+      padding: 0.5rem;
+}
+.education-content{
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0.5rem;
+}
+.secondary{
+      margin-top: 10px;
+}
+.higher-secondary{
+      margin-top: 3.2rem;
+}
+.secondary h3, .higher-secondary h3{
+      margin-bottom: 10px;
+}
+.degree-section{
+      padding-bottom: 5px;
+      width: 82%;
+}
+.school{
+      width: 30%;
+}
+.degree-title{
+      font-size: 1rem;
+      margin-bottom: 5px;
+      font-weight: 580;
+}
+.sub-title{
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+}
+.sub-para{
+      font-size: 0.8rem;
+      font-weight: 700;
+}
+.experience-para{
+      width: 90%;
+}
+.project{
+      width:98%;
+}
+.company{
+      width: 18%;
+}
+@media screen and (min-width: 0px) and (max-width: 673px) {
+      .main-content{
+          display:grid;
+          grid-template-columns: repeat(1,1fr);
+      }
+      
+}
